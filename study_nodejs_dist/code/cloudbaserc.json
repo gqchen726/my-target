@@ -1,0 +1,85 @@
+{
+  "name": "study_nodejs",
+  "version": "1.0.0",
+  "description": "a demo for study nodejs",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev:start": "node conf/server.js --env=dev-start",
+    "build:dll": "webpack  --progress --color --config webpack.config.js --env=build-dll",
+    "build:dist": "webpack  --progress --color --config webpack.config.js --env=build-dist",
+    "build:test": "webpack  --progress --color --config webpack.template.config.js",
+    "build:package": "npm run build:dll && npm run build:dist"
+  },
+  "keywords": [],
+  "author": "gechen",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@babel/runtime": "^7.12.5",
+    "axios": "^0.21.1",
+    "localstorage": "^1.0.1",
+    "sessionstorage": "^0.1.0"
+  },
+  "devDependencies": {
+    "@ant-design/icons": "^4.3.0",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "antd": "^4.9.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-import": "^1.13.3",
+    "bundle-loader": "^0.5.6",
+    "create-react-class": "^15.7.0",
+    "css-loader": "^3.6.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "happypack": "^5.0.1",
+    "hard-source-webpack-plugin": "^0.13.1",
+    "history": "^5.0.0",
+    "html-webpack-externals-plugin": "^3.8.0",
+    "html-webpack-plugin": "^4.5.1",
+    "less": "^2.7.3",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "minimist": "1.2.5",
+    "node-sass": "5.0.0",
+    "open": "7.3.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-loader": "^5.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-lifecycles-compat": "^3.0.4",
+    "react-mixin": "^5.0.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "requirejs": "^2.3.6",
+    "sass-loader": "^11.0.1",
+    "speed-measure-webpack-plugin": "^1.4.2",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^4.2.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.12.0",
+    "webpack-bundle-analyzer": "^4.3.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dashboard": "^3.2.1",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ],
+    "plugins": [
+      "react-hooks"
+    ],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    }
+  }
+}

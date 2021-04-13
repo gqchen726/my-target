@@ -1,0 +1,22 @@
+@import '~antd/dist/antd.css';
+.Page {
+    height: 150vh;
+}
+.modeControl {
+    text-align: center;
+}
+.logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.2);
+}
+.site-layout .site-layout-background {
+    background: #fff;
+}
+.site-layout {
+    margin-left: 200px;
+    height: 128vh;
+}
+[data-theme="dark"] .site-layout .site-layout-background {
+    background: #f5c1c1;
+}
